@@ -1,0 +1,238 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+/* COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Stint Ultra Condensed";
+    scroll-behavior: smooth;
+}
+
+.heading{
+    background-color: #dc3545;
+    margin-bottom: 1em;
+}
+
+.reg_sec h6 span a, .check_section h6 a{
+    text-decoration: none;
+}
+
+.about_sec_heading h2, .gallery_sec_heading h2,
+ .process_sec_heading h2, .our_blog_heading h2, .contact_heading h2{
+    text-decoration: underline;
+}
+
+/* LOGO CSS */
+.logo h2{
+    margin-left: 12px;
+    font-weight: bold;
+    font-family: 'Sigmar One', serif !important;
+}
+.follow_text{
+    margin-right: 4em;
+}
+
+.follow_text h6{
+    font-family: "Stint Ultra Condensed";
+    font-size: 2rem; 
+}
+
+.main_menu{
+    display: flex;
+    padding: 3vh;
+}
+
+.menu_items{
+    display: flex;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.list-items{
+    padding: 10px;
+    font-family: "Pattaya", sans-serif;
+}
+
+.list-items >a{
+    color: #fff;
+    transition: 1s all ease;
+    text-decoration: none;
+}
+
+.list-items >a:hover{
+    cursor: pointer;
+    color: #fff;
+    transition: 1s ease all;
+}
+
+/* HEADER SECTION CSS*/
+img{
+    height: 16em;
+    width: 30em;
+    margin-top: 2em;
+}
+
+.vertical{
+    border-left: 1px solid #dc3545;
+    height: 170px;
+    position: absolute;
+    left: 54%;
+    margin-top: 70px;
+}
+
+.form-control-lg{
+    border-color: #dc3545 !important;
+}
+
+.check_section{
+    margin-left: 1.3rem !important;
+}
+
+.rem_check input[type= "checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 1px solid #dc3545 ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.rem_check input[type= "checkbox"]::after{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #dc3545;
+    display: none;
+    font-size: 13px;
+}
+
+.rem_check input[type= "checkbox"]:checked::after{
+    display: block;
+}
+
+.rem_check label{
+    font-family: "Stint Ultra Condensed";
+    font-size: 1.4rem;
+    margin-top: -5px; 
+}
+
+.check_section h6{
+    font-family: "Stint Ultra Condensed";
+    font-size: 1.4rem;
+    margin-top: -2.5px; 
+}
+
+.reg_sec h6{
+    font-family: "Stint Ultra Condensed";
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+/* ABOUT SECTION CSS */
+.about_sec img{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* GALLERY CSS */
+.gallery_img_sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery_img_sec img{
+    width: 18em;
+    height: 14em;
+    margin:10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: 1px solid #dc3545;
+}
+
+.gallery_img_sec img:hover{
+    transform: scale(1.1);
+}
+
+/* PROCESS SECTION CSS */
+.process_sec .card{
+    border: 1px solid #dc3545;
+}
+
+/* BLOG CSS */
+.card_img_blog img{
+    width: 12em;
+    height: 7em;
+
+}
+
+/* FOOTER CSS */
+.cont_email{
+    margin-right: 2.5em;
+}
+
+.footer p{
+    font-family: "Stint Ultra Condensed";
+    font-size: 1rem;
+    color: #fff;
+}
+
+.footer_icons_sec{
+    float: right;
+}
+
+.footer_text, .footer_icons{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 1199px) and (min-width: 992px){
+    img{
+        width: 23em;
+    }
+    .process_sec .container .row .card{
+        width: 14em !important;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .follow_text h6{
+        margin-left: 1em;
+    }
+}
+
+@media screen and (min-width: 992px){
+   .menu_items{
+       margin-left: -4em;
+   }
+}
+
+@media screen and (max-width: 575px){
+    .footer_icons_sec{
+        float: left !important;
+    }
+    .footer_icons{
+        margin-top: 1px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .card_img_blog img{
+        width: 17em;
+        height: 9.5em;
+    }
+}
+
+@media screen and (max-width: 365px){
+    .menu_items{
+        font-size: 1.2em !important;
+    }
+}

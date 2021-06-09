@@ -1,0 +1,137 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+/* COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Stint Ultra Condensed"
+}
+
+.heading{
+    background-color: #dc3545;
+    margin-bottom: 1em;
+}
+
+
+/* LOGO CSS */
+.logo h2{
+    margin-left: 12px;
+    font-weight: bold;
+    font-family: 'Sigmar One', serif !important;
+}
+
+.reg_text h6{
+    font-family: "Stint Ultra Condensed";
+    font-size: 2rem; 
+}
+
+
+/* HEADER SECTION CSS*/
+img{
+    height: 25em;
+    width: 30em;
+}
+
+.vertical{
+    border-left: 1px solid #dc3545;
+    height: 230px;
+    position: absolute;
+    left: 54%;
+    margin-top: 70px;
+}
+
+.form-control-lg{
+    border-color: #dc3545 !important;
+}
+
+.reg_check_section{
+    margin-left: 1.3rem !important;
+}
+
+.reg_check input[type= "checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 1px solid #dc3545 ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.reg_check input[type= "checkbox"]::after{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #dc3545;
+    display: none;
+    font-size: 13px;
+}
+
+.reg_check input[type= "checkbox"]:checked::after{
+    display: block;
+}
+
+.reg_check label{
+    font-family: "Stint Ultra Condensed";
+    font-size: 1.4rem;
+    margin-top: -5px; 
+}
+
+.check_section h6{
+    font-family: "Stint Ultra Condensed";
+    font-size: 1.4rem;
+    margin-top: -2.5px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER CSS */
+.footer p{
+    font-family: "Stint Ultra Condensed";
+    font-size: 1rem;
+    color: #fff;
+}
+
+.footer_icons_sec{
+    float: right;
+}
+
+.footer_text, .footer_icons{
+    margin-top: 10px;
+}
+
+
+
+@media screen and (max-width: 992px){
+    .reg_text h6{
+        margin-left: 1em;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .footer_icons_sec{
+        float: left !important;
+    }
+    .footer_icons{
+      margin-top: -10px !important;
+    }
+}
